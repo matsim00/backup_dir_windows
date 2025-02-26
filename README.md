@@ -43,7 +43,3 @@ Puoi modificare le seguenti variabili nello script:
 - Assicurati che `tar` sia disponibile nel tuo `PATH`.
 - Se `tar` non è disponibile, puoi usare strumenti alternativi come `7-Zip`.
 
-## Licenza
-
-Questo progetto è distribuito sotto la licenza MIT. Sentiti libero di modificarlo e ridistribuirlo.
-
