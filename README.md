@@ -1,50 +1,50 @@
-# backup_dir_windows
+# Backup Script per Windows
 
-Backup Script per Windows
+Questo repository contiene uno script batch per eseguire il backup di una directory specifica in un file compresso `.tar.gz`.
 
-Questo repository contiene uno script batch per eseguire il backup di una directory specifica in un file compresso .tar.gz.
+## Requisiti
 
-Requisiti
+- Windows 10 o successivo (tar è integrato nelle versioni recenti di Windows)
+- Permessi di amministratore (se necessario per accedere a cartelle protette)
 
-Windows 10 o successivo (tar è integrato nelle versioni recenti di Windows)
+## Installazione
 
-Permessi di amministratore (se necessario per accedere a cartelle protette)
+1. Clona il repository o scarica il file `backup.bat`.
 
-Installazione
+   ```sh
+   git clone https://github.com/tuo-utente/nome-repository.git
+   cd nome-repository
+   ```
 
-Clona il repository o scarica il file backup.bat.
+2. Modifica il file `backup.bat` per specificare:
+   - La cartella da salvare (`set dir="C:\Users\NomeUtente"`)
+   - La destinazione del backup (`set dest="D:\Backup"`)
 
-git clone https://github.com/tuo-utente/nome-repository.git
-cd nome-repository
+## Utilizzo
 
-Modifica il file backup.bat per specificare:
+1. Apri un prompt dei comandi con privilegi di amministratore.
+2. Esegui lo script:
+   
+   ```sh
+   backup.bat
+   ```
 
-La cartella da salvare (set dir="C:\Users\NomeUtente")
+3. Il backup verrà salvato nella cartella specificata con il nome `home_windows_YYYYMMDD.tar.gz`.
 
-La destinazione del backup (set dest="D:\Backup")
-
-Utilizzo
-
-Apri un prompt dei comandi con privilegi di amministratore.
-
-Esegui lo script:
-
-backup.bat
-
-Il backup verrà salvato nella cartella specificata con il nome home_windows_YYYYMMDD.tar.gz.
-
-Personalizzazione
+## Personalizzazione
 
 Puoi modificare le seguenti variabili nello script:
 
-dir → La directory da comprimere
+- `dir` → La directory da comprimere
+- `dest` → La cartella di destinazione
+- `backup_file` → Il nome del file di backup
 
-dest → La cartella di destinazione
+## Note
 
-backup_file → Il nome del file di backup
+- Assicurati che `tar` sia disponibile nel tuo `PATH`.
+- Se `tar` non è disponibile, puoi usare strumenti alternativi come `7-Zip`.
 
-Note
+## Licenza
 
-Assicurati che tar sia disponibile nel tuo PATH.
+Questo progetto è distribuito sotto la licenza MIT. Sentiti libero di modificarlo e ridistribuirlo.
 
-Se tar non è disponibile, puoi usare strumenti alternativi come 7-Zip.
