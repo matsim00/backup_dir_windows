@@ -12,8 +12,8 @@ Questo repository contiene uno script batch per eseguire il backup di una direct
 1. Clona il repository o scarica il file `backup.bat`.
 
    ```sh
-   git clone [https://github.com/tuo-utente/nome-repository.git](https://github.com/matsim00/backup_dir_windows.git)
-   cd nome-repository
+   git clone https://github.com/matsim00/backup_dir_windows.git
+   cd backup_dir_windows.git
    ```
 
 2. Modifica il file `backup.bat` per specificare:
