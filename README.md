@@ -16,7 +16,7 @@ Questo repository contiene uno script batch per eseguire il backup di una direct
    ```
 
 2. Modifica il file `backup.bat` per specificare:
-   - La cartella da salvare (`set dir="C:\Users\NomeUtente"`)
+   - La cartella da salvare (`set dir="C:\Users"`)
    - La destinazione del backup (`set dest="D:\Backup"`)
 
 ## Utilizzo
